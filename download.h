@@ -23,6 +23,7 @@ std::string download(const std::string url, const std::string filename=""){
               std::ofstream file;
               file.open(filename);
               file << html;
+              file.close();
           }
 
     }catch(curlpp::RuntimeError& e){
